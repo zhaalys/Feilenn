@@ -1,6 +1,6 @@
 # GitHub Daily Feilen 
 
-![Feilen GIF](https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExMDNoYjZvbDJ1YXJoZmtnbnZpMjJyYXFvdzRlbnMyNXR3NzdjdGRrdCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/qb1eHxhUHLdsc/giphy.gif)
+![Feilen GIF](./AdvFeilen.gif)
 
 Welcome to **GitHub Daily Feilen**, my personal corner of the web .  
 
@@ -51,4 +51,5 @@ Because daily progress, no matter how small, adds up.
 ---
 
 Made with  by **Feilen**.
+
 
