@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> Daily Feilen</title>
+  <!-- Tailwind via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <!-- Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+  <!-- Start Screen -->
+  <div id="startScreen" class="fixed inset-0 flex flex-col items-center justify-center bg-gradient-to-br from-blue-900 via-blue-700 to-blue-500 text-white z-50 p-6">
+    <img 
+      src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExbzJudmhvYzRtbjhyNWxuNmZpNDVuZHZ6aXdieTFzdGszYXl1MGlyOCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/iiJ870TcI3PZKxatzS/giphy.gif" 
+      alt="welcome" 
+      class="mb-6 shadow-lg border-4 border-yellow-300 max-w-sm"
+    />
+    <p class="mb-4 text-lg text-center animate__animated animate__fadeIn animate__delay-1s">
+      Please type <span class="font-extrabold text-yellow-300">Feilenhere</span> below to enter the website
+    </p>
+    <input
+      id="inputCode"
+      type="text"
+      placeholder="Type Feilenhere here..."
+      class="px-6 py-3 rounded-lg text-blue-900 mb-4 border-2 border-yellow-300 focus:outline-none focus:ring-4 focus:ring-yellow-200 w-80 text-center text-lg font-bold bg-white shadow-lg"
+    />
+    <button
+      onclick="enterSite()"
+      class="px-10 py-3 bg-yellow-400 text-blue-900 font-bold rounded-2xl shadow-lg hover:bg-yellow-300 transition text-lg animate__animated animate__pulse animate__infinite"
+    >
+      Enter
+    </button>
+  </div>
+
+  <!-- Navbar -->
+  <nav id="navbar" class="hidden fixed w-full bg-white shadow-md z-40">
+    <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
+      <h1 class="text-2xl font-bold text-blue-600"> Feilen</h1>
+      <div class="hidden md:flex gap-6 font-medium">
+        <a href="#home" class="hover:text-blue-600">Home</a>
+        <a href="#about" class="hover:text-blue-600">About</a>
+        <a href="#blogs" class="hover:text-blue-600">Blogs</a>
+        <a href="#game" class="hover:text-blue-600">Game</a>
+        <a href="#profile" class="hover:text-blue-600">Profile</a>
+        <a href="#contact" class="hover:text-blue-600">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="home" class="hidden relative flex flex-col items-center justify-center min-h-screen text-center p-6 pt-32 overflow-hidden">
+    <img src="https://media1.giphy.com/media/kXdo4BgGoFC80/giphy.gif" alt="background"
+      class="absolute inset-0 w-full h-full object-cover -z-10 opacity-70 blur-sm animate-pulse"/>
+    <img src="https://media.tenor.com/VOQM9bXxYdQAAAAi/anime.gif" alt="profile"
+      class="w-40 h-40 rounded-full shadow-xl mb-6 border-4 border-white"/>
+    <h1 class="text-4xl font-bold mb-2 text-white drop-shadow-lg">
+      Welcome to <span class="text-yellow-300"> Daily Feilen</span>
+    </h1>
+    <p class="text-lg text-gray-200 mb-4">Sharing daily commits, blogs, and journey </p>
+  </section>
+
+  <!-- Blogs -->
+  <section id="blogs" class="hidden bg-white py-12 shadow-inner">
+    <div class="max-w-5xl mx-auto p-6">
+      <h2 class="text-3xl font-bold mb-8 text-blue-700">Hobby</h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <!-- Blog items -->
+        <div class="rounded-2xl border bg-gray-50 shadow-md p-6 hover:shadow-lg transition">
+          <h3 class="text-xl font-bold mb-2"> Journey</h3>
+          <img src="https://media.giphy.com/media/fxHYNGd6QjJUGfojgC/giphy.gif" class="w-full rounded-lg mb-4"/>
+          <p class="text-gray-600 mb-4">A place to share stories, yes, sometimes.</p>
+        </div>
+        <div class="rounded-2xl border bg-gray-50 shadow-md p-6 hover:shadow-lg transition">
+          <h3 class="text-xl font-bold mb-2"> Football</h3>
+          <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExaG8yeHljbWFnbjl4NnM1amhzNGx6OW1tNXRsazE5MDNzdmtvZDFvbyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/E0UF2rmGgVpf2/giphy.gif" 
+            class="w-full rounded-lg mb-4"/>
+          <p class="text-gray-600 mb-4">Lots of moments ... so from that make many memories.</p>
+        </div>
+        <div class="rounded-2xl border bg-gray-50 shadow-md p-6 hover:shadow-lg transition">
+          <h3 class="text-xl font-bold mb-2">Art </h3>
+          <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExYzF3bmw0cmswNzg5c3NqdHM5YzlpdTUzdjJzdWd0am1xOTh6OTRzeSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/zMsALq60sVc0DkT1ta/giphy.gif" class="w-full rounded-lg mb-4"/>
+          <p class="text-gray-600 mb-4">Exploring? Hm seems exciting.</p>
+        </div>
+        <div class="rounded-2xl border bg-gray-50 shadow-md p-6 hover:shadow-lg transition">
+          <h3 class="text-xl font-bold mb-2">Ride a bicycle</h3>
+          <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExdHRqcTdvZDloOWFzc3p1djZ6dTFhN3RkNHVjcWdza2Vib3c5a3V0NSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l2Sq32gF8Qs6dRz8s/giphy.gif" class="w-full rounded-lg mb-4"/>
+          <p class="text-gray-600 mb-4">Befriend, anyone.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Game Section -->
+  <section id="game" class="hidden bg-blue-50 py-12">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl font-bold text-blue-700 mb-6"> Mini Game: Avoid the Blocks</h2>
+      <canvas id="gameCanvas" width="600" height="400"
+        class="border-4 border-yellow-400 rounded-lg bg-black mx-auto mb-4"></canvas>
+      <button id="startBtn"
+        class="px-6 py-3 bg-yellow-400 text-blue-900 font-bold rounded-2xl shadow hover:bg-yellow-300 transition">
+        ▶ Start Game
+      </button>
+      <p class="mt-4 text-gray-700">Gerakkin kotak biru ⬅️➡️ untuk menghindari (jangan sampe kena) rintangan merah</p>
+    </div>
+  </section>
+
+  <!-- Profile -->
+  <section id="profile" class="hidden bg-gray-50 py-12">
+    <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-8 items-center p-6">
+      <div>
+        <h2 class="text-3xl font-bold text-blue-700 mb-4"> Feilen Profile</h2>
+        <p class="text-gray-700 mb-4">Hi im Feilen, Web Developer, Pengen terus ngemabangin diri, semua ada batas, cari batas itu bro</p>
+        <ul class="space-y-2 text-gray-600">
+          <li> Fokus: Web Development & Anime Enthusiast</li>
+          <li> Tools: React, Tailwind, Node.js</li>
+          <li> Motto: Consistency beats talent</li>
+        </ul>
+      </div>
+      <div class="flex justify-center">
+        <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExY2dmZGZpaWZhNTM5c3JnOHR4NnU5bXU5YmZlbWdtcjFrYXFzMjR1YSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/qb1eHxhUHLdsc/giphy.gif" alt="profile gif" class="rounded-2xl shadow-xl border-4 border-yellow-300"/>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="hidden max-w-3xl mx-auto p-6 text-center">
+    <h2 class="text-2xl font-semibold mb-4">Get in Touch</h2>
+    <p class="text-gray-700 mb-6">Punya ide, kolaborasi, atau sekadar say hi?</p>
+    <form class="space-y-4">
+      <input type="text" placeholder="Your Name" class="w-full px-4 py-2 border rounded-lg"/>
+      <input type="email" placeholder="Your Email" class="w-full px-4 py-2 border rounded-lg"/>
+      <textarea placeholder="Your Message" class="w-full px-4 py-2 border rounded-lg"></textarea>
+      <button type="submit" class="px-6 py-3 bg-blue-600 text-white rounded-2xl shadow hover:bg-blue-700">Send</button>
+    </form>
+  </section>
+
+  <!-- Special GIF before footer -->
+  <div id="specialGif" class="hidden w-full flex justify-center my-10">
+    <img 
+      src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExMDl4NTk1N3dtenpldGhvejVoNXEzamQ4YThmN2xuMXJrbm0yb3BhaCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/10I54Pr7nbGrAs/giphy.gif" 
+      alt="fun gif" 
+      class="shadow-xl border-4 border-blue-500 rounded-2xl"
+/>
+  </div>
+
+  <!-- Footer -->
+  <footer id="footer" class="hidden bg-blue-900 text-gray-200 pt-12">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-4 gap-8 p-6">
+      <div>
+        <h3 class="text-xl font-bold text-yellow-300 mb-3">About</h3>
+        <p>GitHub Daily Feilen adalah catatan commit, blog, dan perjalanan coding setiap hari(kadang kdang).</p>
+      </div>
+      <div>
+        <h3 class="text-xl font-bold text-yellow-300 mb-3">Quick Links</h3>
+        <ul class="space-y-2">
+          <li><a href="#home" class="hover:underline">Home</a></li>
+          <li><a href="#blogs" class="hover:underline">Blogs</a></li>
+          <li><a href="#game" class="hover:underline">Game</a></li>
+          <li><a href="#profile" class="hover:underline">Profile</a></li>
+          <li><a href="#contact" class="hover:underline">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-xl font-bold text-yellow-300 mb-3">Contact</h3>
+        <p>Email: feilen.com</p>
+        <p>Location: The location is not known</p>
+      </div>
+      <div>
+        <h3 class="text-xl font-bold text-yellow-300 mb-3">Follow Me</h3>
+        <p class="flex gap-3">
+          <span class="icon" data-lucide="github"></span>
+          <span class="icon" data-lucide="mail"></span>
+        </p>
+      </div>
+    </div>
+    <div class="text-center py-4 bg-blue-800">© <span id="year"></span> GitHub Daily Feilin.  </div>
+  </footer>
+
+  <script>
+    // lucide icons
+    lucide.createIcons();
+
+    function enterSite() {
+      const input = document.getElementById('inputCode').value.trim();
+      if (input === "Feilenhere") {
+        document.getElementById('startScreen').style.display = 'none';
+        ['navbar','home','blogs','game','contact','footer','specialGif','profile'].forEach(id=>{
+          document.getElementById(id).classList.remove('hidden');
+        });
+      } else {
+        alert("Please type 'Feilenhere' to continue");
+      }
+    }
+
+    // auto-update year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Game logic
+    const canvas = document.getElementById("gameCanvas");
+    const ctx = canvas.getContext("2d");
+    let player, obstacles, score, gameRunning, gameLoopId, obstacleInterval;
+
+    function initGame() {
+      player = { x: 280, y: 350, w: 40, h: 40, color: "cyan" };
+      obstacles = [];
+      score = 0;
+      gameRunning = false;
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      ctx.fillStyle = "white";
+      ctx.font = "22px Arial";
+      ctx.fillText("Press ▶ Start Game to Play", 180, 200);
+    }
+
+    function drawPlayer() {
+      ctx.fillStyle = player.color;
+      ctx.fillRect(player.x, player.y, player.w, player.h);
+    }
+
+    function drawObstacles() {
+      ctx.fillStyle = "red";
+      obstacles.forEach(o => ctx.fillRect(o.x, o.y, o.w, o.h));
+    }
+
+    function updateObstacles() {
+      obstacles.forEach(o => o.y += o.speed);
+      obstacles = obstacles.filter(o => o.y < canvas.height);
+    }
+
+    function spawnObstacle() {
+      const w = 40 + Math.random() * 40;
+      const x = Math.random() * (canvas.width - w);
+      obstacles.push({ x, y: 0, w, h: 20, speed: 2 + Math.random() * 3 });
+    }
+
+    function checkCollision() {
+      for (let o of obstacles) {
+        if (
+          player.x < o.x + o.w &&
+          player.x + player.w > o.x &&
+          player.y < o.y + o.h &&
+          player.y + player.h > o.y
+        ) {
+          endGame();
+          return true;
+        }
+      }
+      return false;
+    }
+
+    function drawScore() {
+      ctx.fillStyle = "white";
+      ctx.font = "20px Arial";
+      ctx.fillText("Score: " + score, 10, 30);
+    }
+
+    function gameLoop() {
+      if (!gameRunning) return;
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      drawPlayer();
+      drawObstacles();
+      updateObstacles();
+      checkCollision();
+      drawScore();
+      score++;
+      gameLoopId = requestAnimationFrame(gameLoop);
+    }
+
+    function startGame() {
+      initGame();
+      gameRunning = true;
+      document.getElementById("startBtn").style.display = "none";
+      obstacleInterval = setInterval(spawnObstacle, 1500);
+      gameLoop();
+    }
+
+    function endGame() {
+      gameRunning = false;
+      cancelAnimationFrame(gameLoopId);
+      clearInterval(obstacleInterval);
+      alert("Game Over! Final Score: " + score);
+      document.getElementById("startBtn").style.display = "inline-block";
+      initGame();
+    }
+
+    // Controls
+    document.addEventListener("keydown", e => {
+      if (!gameRunning) return;
+      if (e.key === "ArrowLeft" && player.x > 0) player.x -= 20;
+      if (e.key === "ArrowRight" && player.x + player.w < canvas.width) player.x += 20;
+    });
+
+    document.getElementById("startBtn").addEventListener("click", startGame);
+
+    // Initialize
+    initGame();
+  </script>
+</body>
+</html>
