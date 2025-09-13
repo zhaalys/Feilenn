@@ -40,7 +40,7 @@ Here, I share my **daily coding journey**, **blogs**, and a little bit of **fun*
 > “Consistency beats talent.”  
 
 Because daily progress, no matter how small, adds up.  
-
+Yap
 ---
 
 ###  Connect with Me
@@ -51,5 +51,6 @@ Because daily progress, no matter how small, adds up.
 ---
 
 Made with  by **Feilen**.
+
 
 
