@@ -4,7 +4,7 @@
 
 Welcome to **GitHub Daily Feilen**, my personal corner of the web .  
 
-Here, I share my **daily coding journey**, **blogs**, and a little bit of **fun** along the way. Whether it’s exploring anime worlds, creating mini-games, or diving into new tech stacks, this site is where I document it all.  
+Here, I share my **daily coding journey**, **blogs**, and a little bit of **fun** along the way. Whether it’s exploring anime worlds, creating mini-games, or diving into new tech stacks, this site is where I document it all..
 
 ---
 
@@ -51,6 +51,7 @@ Yaps..
 ---
 
 Made with  by **Feilen**.
+
 
 
 
