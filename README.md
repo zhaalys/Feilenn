@@ -31,7 +31,7 @@ Here, I share my **daily coding journey**, **blogs**, and a little bit of **fun*
 - **Frontend**: HTML, TailwindCSS, JavaScript  
 - **Animations**: Animate.css  
 - **Icons**: Lucide  
-- **Fun**: GIFs everywhere 🎉  
+- **Fun**: GIFs everywhere 
 
 ---
 
@@ -51,6 +51,7 @@ Yaps..
 ---
 
 Made with  by **Feilen**.
+
 
 
 
